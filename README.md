@@ -1,59 +1,112 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 StudBud — Smart Study Planner
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> A free all-in-one study companion built for students who want to stay organised, focused, and consistent.
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Alpine.js](https://img.shields.io/badge/Alpine.js-3-77C1D2?style=for-the-badge&logo=alpine.js&logoColor=white)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🧩 Core
+- **Subject Manager** — Add subjects with exam dates and auto priority ranking
+- **Task Tracker** — Manage tasks per subject with deadlines and completion tracking
+- **Study Dashboard** — Overview of today's tasks, streak, and study time
 
-## Learning Laravel
+### ⏱️ Pomodoro Timer
+- 25 min focus / 5 min short break / 15 min long break
+- Beautiful circular progress ring with pulse animation
+- Confetti celebration + toast notifications on session complete
+- Session counter and daily log
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 📊 Progress & Insights
+- Weekly study hours bar chart (Chart.js)
+- Subject-wise progress bars
+- Smart AI-like study suggestions based on real patterns
+- Daily streak system with motivation tracking
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 🎯 Smart Features
+- Auto priority ranking based on exam date proximity
+- "You haven't studied X today" nudges
+- Overdue task alerts
+- Daily goal setting and tracking
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🛠️ Tech Stack
 
-### Premium Partners
+| Layer | Technology |
+|-------|-----------|
+| Backend | Laravel 12 |
+| Frontend | Blade + Alpine.js |
+| Styling | Custom CSS (Milk/Oat/Mocha palette) |
+| Charts | Chart.js |
+| Auth | Laravel Breeze |
+| Database | MySQL |
+| Build Tool | Vite |
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🚀 Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+# Clone the repo
+git clone https://github.com/lasata33/StudBud.git
+cd StudBud
 
-## Code of Conduct
+# Install PHP dependencies
+composer install
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Install Node dependencies
+npm install
 
-## Security Vulnerabilities
+# Copy environment file
+cp .env.example .env
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Generate app key
+php artisan key:generate
 
-## License
+# Set up your database in .env then run:
+php artisan migrate
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Build assets
+npm run build
+
+# Start server
+php artisan serve
+```
+
+---
+
+## 🎨 UI Design
+
+StudBud uses a warm, cozy color palette inspired by café aesthetics:
+
+- **Milk** `#FBF7F4` — Page background
+- **Oat** `#E5DED2` — Cards and borders  
+- **Taupe** `#A39382` — Muted text and icons
+- **Mocha** `#685D54` — Buttons, accents, sidebar active
+- **Charcoal** `#232323` — Sidebar background and headings
+
+---
+
+## 📸 Pages
+
+- 🏠 Landing page with animated floating cards
+- 📊 Dashboard with circular goal ring
+- 📖 Subject manager with priority badges
+- ✅ Task tracker with deadline badges
+- 🍅 Pomodoro timer with confetti
+- 📈 Progress charts
+- 🧠 Smart suggestions
+- 🎯 Goal & streak tracker
+
+---
+
+## 👩‍💻 Developer
+
+Built by **Lasata Maharjan** as an internship project.
+
+> "Study smarter, not harder." ☕
