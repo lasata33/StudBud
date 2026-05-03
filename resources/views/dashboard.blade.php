@@ -5,7 +5,7 @@
 <div class="page-subtitle">{{ now()->format('l, F j, Y') }}</div>
 
 {{-- Stat Cards --}}
-<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px;">
     <div class="stat-card">
         <div class="stat-number">{{ $todayTasks->count() }}</div>
         <div class="stat-label">Tasks Today</div>
@@ -26,7 +26,7 @@
 </div>
 
 {{-- Goal Ring + Today Tasks --}}
-<div style="display: grid; grid-template-columns: 300px 1fr; gap: 20px; margin-bottom: 20px;">
+<div style="display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 20px;">
 
     {{-- Circular Goal Ring --}}
     <div class="card" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">

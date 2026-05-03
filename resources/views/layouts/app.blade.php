@@ -53,7 +53,27 @@
         .page-subtitle { font-size: 14px; color: #A39382; margin-bottom: 28px; }
         .divider { border: none; border-top: 1px solid #E5DED2; margin: 16px 0; }
         .section-title { font-size: 15px; font-weight: 600; color: #685D54; margin-bottom: 16px; letter-spacing: 0.3px; }
-    </style>
+   
+        /* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; min-height: auto; position: relative;
+        flex-direction: row; flex-wrap: wrap;
+        padding: 16px; gap: 8px;
+    }
+    .sidebar .logo { font-size: 18px; margin-bottom: 0; }
+    .sidebar .logo-sub { display: none; }
+    .nav-label { display: none; }
+    .sidebar a { padding: 8px 10px; font-size: 12px; margin-bottom: 0; }
+    .sidebar a .icon { font-size: 14px; }
+    .sidebar-bottom { margin-top: 0; padding-top: 0; border-top: none; width: 100%; }
+    .sidebar-bottom form { display: inline; }
+    .sidebar-bottom button { padding: 8px 16px; font-size: 12px; }
+    .sidebar-bottom div { display: none; }
+    .main { margin-left: 0; padding: 20px 16px; }
+    .page-title { font-size: 22px; }
+}
+   </style>
 </head>
 <body>
     <div class="sidebar">

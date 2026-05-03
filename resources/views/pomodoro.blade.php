@@ -15,7 +15,7 @@
 <div class="page-title">🍅 Pomodoro Timer</div>
 <div class="page-subtitle">Stay focused, study smarter</div>
 
-<div style="display: grid; grid-template-columns: 1fr 340px; gap: 24px;">
+<div style="display: grid; grid-template-columns: 1fr; gap: 24px;">
 
     {{-- Timer Card --}}
     <div class="card" style="text-align: center; padding: 48px 32px;" x-data="pomodoro()" x-init="init()">
